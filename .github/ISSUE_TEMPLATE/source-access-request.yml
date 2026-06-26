@@ -1,0 +1,56 @@
+﻿name: Source access request
+description: Request access to the private DystopAI-Core source repository.
+title: "Source access request: <your GitHub username>"
+labels:
+  - access-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in DystopAI. Source access is granted manually.
+        Please do not include secrets, private keys, or sensitive personal information in this public issue.
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub username
+      description: Which GitHub account should receive access if approved?
+      placeholder: hotboysupreme12-hash
+    validations:
+      required: true
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      options:
+        - Evaluation
+        - Contribution
+        - Partnership
+        - Security review
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you want access?
+      description: Briefly explain what you want to review, build, test, or contribute.
+      placeholder: I want to evaluate DystopAI with OpenClaw because...
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization or project context
+      description: Optional. Share your company, team, or project if relevant.
+      placeholder: Personal project / Company / Open-source project
+    validations:
+      required: false
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Access terms
+      options:
+        - label: I understand the source repository is private and access may be declined.
+          required: true
+        - label: I agree not to redistribute private source, builds, credentials, internal docs, or repository contents without written permission.
+          required: true
