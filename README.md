@@ -15,7 +15,7 @@
 
 Turn intent into coordinated work. Build agents, assign missions, schedule recurring operations, connect communication channels, inspect live runtime activity, and keep consequential actions under human control.
 
-**Multi Model Nexus** Â· **Local-first** Â· **Mission-driven** Â· **Channel-agnostic** Â· **Human-controlled**
+**Multi Model Nexus** - **Local-first** - **Mission-driven** - **Channel-agnostic** - **Human-controlled**
 
 </div>
 
@@ -62,7 +62,7 @@ DystopAI is a local-first AI operations system where specialized agents, mission
 | **Real-time analyst alerts** | Watch products, inventory, prices, news, competitors, launches, system health, or other business signals and deliver useful alerts through a preferred channel. |
 | **Everyday life automation** | Schedule recurring work such as grocery planning, shopping lists, bill reminders, appointment preparation, meal planning, travel checks, and household follow-ups. |
 | **Human approval gates** | Let agents prepare actions while pausing before purchases, messages, deployments, deletion, GitHub pushes, account changes, or other high-impact decisions. |
-| **Remote operations from anywhere** | Send commands such as â€œcheck my app,â€ â€œsummarize today,â€ â€œlaunch a review mission,â€ or â€œstop all active runsâ€ through a configured channel while the local runtime remains the control center. |
+| **Remote operations from anywhere** | Send commands such as "check my app," "summarize today," "launch a review mission," or "stop all active runs" through a configured channel while the local runtime remains the control center. |
 | **Project-aware workflows** | Operate on real folders, repositories, documents, stores, media projects, dashboards, overlays, resumes, websites, and business assets. |
 | **Plugin-powered expansion** | Add communication, providers, browser automation, memory, search, files, scheduling, alerts, skills, and service integrations without redefining the core product. |
 | **Continuous scheduled missions** | Run hourly, daily, weekly, cron-based, or event-driven work such as health checks, reports, content plans, release checks, reminders, and watch missions. |
@@ -74,7 +74,7 @@ DystopAI is a local-first AI operations system where specialized agents, mission
 
 ## Channel-Agnostic By Design
 
-DystopAI should not be defined as â€œTelegram plus ClawTalkâ€ or by any other fixed pair of services. The durable abstraction is a **compatible communication channel**.
+DystopAI should not be defined as "Telegram plus ClawTalk" or by any other fixed pair of services. The durable abstraction is a **compatible communication channel**.
 
 The desktop app and local web surface are first-class control surfaces. ClawTalk adds SMS, voice, and walkie-style routing in the current app. OpenClaw and its plugin ecosystem can add other channels, with availability determined by the operator's runtime and configuration.
 
@@ -82,12 +82,12 @@ The desktop app and local web surface are first-class control surfaces. ClawTalk
 flowchart LR
   Operator["Operator"]
   Desktop["DystopAI desktop / local web"]
-  Channels["Compatible channels<br/>SMS Â· voice Â· chat apps Â· webhooks"]
-  Gateway["OpenClaw Gateway<br/>routing Â· sessions Â· plugins"]
-  Control["DystopAI Control Plane<br/>missions Â· policy Â· state Â· recovery"]
+  Channels["Compatible channels<br/>SMS - voice - chat apps - webhooks"]
+  Gateway["OpenClaw Gateway<br/>routing - sessions - plugins"]
+  Control["DystopAI Control Plane<br/>missions - policy - state - recovery"]
   Agents["Specialized agent workforce"]
-  Tools["Files Â· browser Â· skills Â· providers Â· services"]
-  Evidence["Live activity Â· approvals Â· reports Â· alerts"]
+  Tools["Files - browser - skills - providers - services"]
+  Evidence["Live activity - approvals - reports - alerts"]
 
   Operator --> Desktop
   Operator --> Channels
@@ -218,14 +218,14 @@ Agent routing refreshes from the current OpenClaw configuration, so model, works
 
 | Goal | Example operator request | Useful controls |
 | --- | --- | --- |
-| **Software delivery** | â€œLaunch a Build mission with an architect, builder, and reviewer. Change no release files. Require lint, typecheck, and an exact changed-file report.â€ | Agent roles, workspace isolation, acceptance gates, verification, stop controls. |
-| **Codebase health** | â€œCheck my app, summarize the failures, and do not modify anything.â€ | Read-only policy, direct agent command, live activity, final evidence. |
-| **Research** | â€œMap the competing products, separate facts from assumptions, and return unresolved questions.â€ | Research mission, parallel specialists, source requirements, synthesis. |
-| **Business monitoring** | â€œWatch these product pages and alert me only when price, inventory, or release status changes.â€ | Watch mission, browser/plugin tools, scheduler, preferred channel. |
-| **Personal operations** | â€œEvery Friday, prepare next week's grocery list from my meal plan and send it for approval.â€ | Recurring schedule, memory, communication plugin, approval boundary. |
-| **Communication** | â€œDraft the customer response, wait for approval, then send through the connected channel.â€ | Specialist agent, tool policy, approval event, channel routing. |
-| **Release review** | â€œRun a release-readiness mission, collect test evidence, list blockers, and never push to GitHub.â€ | Mission risk settings, command restrictions, verification report. |
-| **Emergency control** | â€œStop all active runs and tell me what was interrupted.â€ | Gateway controls, cron stop actions, session inspection, runtime summary. |
+| **Software delivery** | "Launch a Build mission with an architect, builder, and reviewer. Change no release files. Require lint, typecheck, and an exact changed-file report." | Agent roles, workspace isolation, acceptance gates, verification, stop controls. |
+| **Codebase health** | "Check my app, summarize the failures, and do not modify anything." | Read-only policy, direct agent command, live activity, final evidence. |
+| **Research** | "Map the competing products, separate facts from assumptions, and return unresolved questions." | Research mission, parallel specialists, source requirements, synthesis. |
+| **Business monitoring** | "Watch these product pages and alert me only when price, inventory, or release status changes." | Watch mission, browser/plugin tools, scheduler, preferred channel. |
+| **Personal operations** | "Every Friday, prepare next week's grocery list from my meal plan and send it for approval." | Recurring schedule, memory, communication plugin, approval boundary. |
+| **Communication** | "Draft the customer response, wait for approval, then send through the connected channel." | Specialist agent, tool policy, approval event, channel routing. |
+| **Release review** | "Run a release-readiness mission, collect test evidence, list blockers, and never push to GitHub." | Mission risk settings, command restrictions, verification report. |
+| **Emergency control** | "Stop all active runs and tell me what was interrupted." | Gateway controls, cron stop actions, session inspection, runtime summary. |
 
 These are operating patterns, not hardcoded demos. The exact action depends on the models, tools, plugins, credentials, workspaces, and permissions configured by the operator.
 
@@ -497,4 +497,5 @@ DystopAI Core is an active local-first desktop project built around the OpenClaw
 The product direction is larger than any single chat surface:
 
 > **Give intent. Assemble the right agents. Let the system work across time and tools. Stay connected through any compatible channel. Keep the final authority.**
+
 
